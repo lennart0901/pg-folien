@@ -1,0 +1,77 @@
+#+TITLE: Einrichtung einer Mailingliste
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../styles/readtheorg/css/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+#+HTML_HEAD: <style>.slick-prev:before, .slick-next:before {color: black;}</style>
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../styles/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../styles/readtheorg/js/readtheorg.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+#+HTML_HEAD: <script type="text/javascript">$(document).ready(function(){ $('.carousel').slick();});</script>
+* Hinzufügen der Mailadresse
+Zunächst sollten Sie eine neue E-Mailadresse hinzufügen.
+
+In den Einstellungen kann man dann einstellen, dass die Adresse zu einer
+Mailing-Liste gehört
+
+Die Einrichtung erreicht man dann erstmal über die E-Maileinstellungen
+
+file:./Screens/Mailsettings.png
+
+** Screenshots
+Hier noch mal die Einrichtung einer neuen Adresse als 
+Mailingliste
+
+#+BEGIN_EXPORT HTML
+<div id="screens" class="carousel">
+#+END_EXPORT
+file:./Screens/Create1.png
+
+file:./Screens/Create2.png
+
+file:./Screens/Create3.png
+
+file:./Screens/Create4.png
+#+BEGIN_EXPORT HTML
+</div>
+#+END_EXPORT
+
+* Basis-Einrichtung
+** Allgemeine Optionen
+Unter "allgemeine Optionen" sind wichtige Einstellungen zu finden:
+
+- Owner :: Mail-Adressen die hier eingetragen sind bekommen Fehlermeldungen und
+     Moderationsanfragen dürfen die Liste per Mail administrieren
+
+- subject_prefix :: Wird jedem Betreff vorangestellt
+
+- reply-to Header :: Man kann in E-Mails einstellen, dass die Antwort nicht an
+     den Absender geht. Es gibt viel Diskussion unter Nerds, ob Mails
+     automatisch an Mailinglisten gehen sollten. Ich bevorzuge die Einstellung
+     "Diese Liste" für "reply_goes_to_list". Das sorgt dafür dass die
+     Antworten-Funktion in den meisten Mailprogrammen an die Liste antworten
+
+Das sind die wichtigsten Einstellungen unter Allgemeine Optionen
+
+** Mitglieder-Verwaltung
+Unter Mitglieder-Verwaltung können Mitglieder bearbeitet werden.
+
+Es gibt unter Eintragen/Abonnieren, die Möglichkeit Mitglieder hinzuzufügen.
+
+ACHTUNG: In Deutschland ist das direkte Hinzufügen offiziel nur mit expliziter
+Erlaubnis des Empfängers erlaubt.
+
+** Abo-Regeln und Adressfilter
+Unter Absender-Filter lässt sich festlegen wer an die Liste schreiben darf: "generic_nonmember_action"
+
+Auch spezielle Einstellungen für Nicht-Mitglieder sind dort vorzunehmen: [hold, accept, reject, discard]_these_nonmembers
+
+* Moderation
+Moderation erlaubt es Mails an die Liste erst freigeben zu lassen. Dies müssen "moderatoren" oder "owner" vornehmen.
+
+Es können auch nur einzelne  Mitglieder, Nicht-Mitglieder moderiert werden. Siehe Filter.
+
